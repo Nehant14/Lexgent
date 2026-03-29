@@ -1,0 +1,6 @@
+faiss-cpu
+numpy
+sentence-transformers
+pytest
+transformers
+sentencepiece

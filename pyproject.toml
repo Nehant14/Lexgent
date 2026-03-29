@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "lexagent"
+version = "0.1.0"
+description = "Agentic Legal Drafting System with FAISS retrieval"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [
+  { name = "LexAgent Team" }
+]
+dependencies = [
+  "faiss-cpu",
+  "numpy",
+  "sentence-transformers"
+]
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+testpaths = ["tests"]
